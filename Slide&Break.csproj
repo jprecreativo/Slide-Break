@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DestruyeBloque.cs" />
+    <Compile Include="Assets\Scripts\ModificarPuntos.cs" />
     <Compile Include="Assets\Scripts\ModificarVidas.cs" />
     <Compile Include="Assets\Scripts\MovimientoBarra.cs" />
     <Compile Include="Assets\Scripts\MovimientoPelota.cs" />
