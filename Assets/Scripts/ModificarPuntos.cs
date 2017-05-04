@@ -11,7 +11,7 @@ public class ModificarPuntos : MonoBehaviour
         textoPuntos.text = "Puntos: " + ModificarPuntos.puntos;
     }
 
-    public void Start ()
+    private void Start ()
     {
         puntos = 0;
         this.actualizarTextoPuntos();

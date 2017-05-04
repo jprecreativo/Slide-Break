@@ -79,10 +79,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DestruyeBloque.cs" />
+    <Compile Include="Assets\Scripts\EmpezarPartida.cs" />
     <Compile Include="Assets\Scripts\ModificarPuntos.cs" />
     <Compile Include="Assets\Scripts\ModificarVidas.cs" />
     <Compile Include="Assets\Scripts\MovimientoBarra.cs" />
     <Compile Include="Assets\Scripts\MovimientoPelota.cs" />
+    <Compile Include="Assets\Scripts\Salir.cs" />
     <Compile Include="Assets\Scripts\TocaSuelo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
