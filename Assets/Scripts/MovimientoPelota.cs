@@ -36,7 +36,7 @@ public class MovimientoPelota : MonoBehaviour
         }
 	}
 
-    private void pararPelota()
+    public void pararPelota()
     {
         rigidBody.isKinematic = true;
         rigidBody.velocity = Vector3.zero;   // Vector 3 con (0, 0, 0).
