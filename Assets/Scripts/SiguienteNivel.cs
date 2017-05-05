@@ -16,7 +16,7 @@ public class SiguienteNivel : MonoBehaviour
         Invoke("cargaNivel", delay);   // 'Invoke' llamará al método "cargaNivel" tras un 'delay'.
     }
 
-    public bool ultimoNivel()
+    public bool esNivelFinal()
     {
         return (nivel == "Portada");
     }
