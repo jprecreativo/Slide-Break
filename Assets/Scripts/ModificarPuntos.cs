@@ -11,6 +11,7 @@ public class ModificarPuntos : MonoBehaviour
     public MovimientoPelota pelota;
     public MovimientoBarra barra;
     public Transform transformBloques;
+    public SonidosFinPartida reproducir;
 
     private void actualizarTextoPuntos()
     {
@@ -44,10 +45,10 @@ public class ModificarPuntos : MonoBehaviour
             if(siguienteNivel.esNivelFinal())
                 juegoSuperado.SetActive(true);
 
-
             else
                 nivelSuperado.SetActive(true);
 
+            reproducir.sonidoNivelCompletado();
             siguienteNivel.activarCarga();
         }
     }

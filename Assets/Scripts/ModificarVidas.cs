@@ -9,6 +9,7 @@ public class ModificarVidas : MonoBehaviour
     public MovimientoBarra barra;
     public GameObject gameOver;
     public SiguienteNivel portada;
+    public SonidosFinPartida reproducir;
 
     private void Start()
     {
@@ -34,6 +35,8 @@ public class ModificarVidas : MonoBehaviour
                 pelota.pararPelota();
                 barra.enabled = false;
                 gameOver.SetActive(true);
+
+                reproducir.sonidoGameOver();
 
                 portada.nivel = "Portada";
                 portada.activarCarga();
