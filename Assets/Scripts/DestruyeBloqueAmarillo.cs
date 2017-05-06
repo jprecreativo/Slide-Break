@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DestruyeBloque : MonoBehaviour
+public class DestruyeBloqueAmarillo : MonoBehaviour
 {
     public GameObject particleSys;
     public ModificarPuntos puntos;

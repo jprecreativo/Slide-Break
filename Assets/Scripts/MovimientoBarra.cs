@@ -25,9 +25,10 @@ public class MovimientoBarra : MonoBehaviour
         this.transform.position = posInicial;
     }
 
-    /* private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision pelota)
     {
-        foreach (ContactPoint contact in collision.contacts)
-            Debug.Log(contact.point);
-    } */
+        Rigidbody rigidBodyPelota = pelota.gameObject.transform.GetComponent<Rigidbody>();
+
+        rigidBodyPelota.AddForce(new Vector3(0, VariablesGlobales.VELOCIDAD_REBOTE_BARRA, 0));
+    }
 }

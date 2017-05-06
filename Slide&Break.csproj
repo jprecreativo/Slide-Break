@@ -78,7 +78,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\DestruyeBloque.cs" />
+    <Compile Include="Assets\Scripts\DestruyeBloqueAmarillo.cs" />
+    <Compile Include="Assets\Scripts\DestruyeBloqueNaranja.cs" />
     <Compile Include="Assets\Scripts\EmpezarPartida.cs" />
     <Compile Include="Assets\Scripts\ModificarPuntos.cs" />
     <Compile Include="Assets\Scripts\ModificarVidas.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\Scripts\SonidosFinPartida.cs" />
     <Compile Include="Assets\Scripts\SonidosPelota.cs" />
     <Compile Include="Assets\Scripts\TocaSuelo.cs" />
+    <Compile Include="Assets\Scripts\VariablesGlobales.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

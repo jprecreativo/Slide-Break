@@ -8,6 +8,12 @@ public class SiguienteNivel : MonoBehaviour
 
     private void cargaNivel()
     {
+        if (!this.esNivelFinal())
+        {
+            ModificarVidas.vidas++;
+            VariablesGlobales.aumentarDificultad();
+        }
+
         SceneManager.LoadScene(nivel);
     }
 

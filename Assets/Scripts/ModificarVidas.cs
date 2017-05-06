@@ -13,7 +13,8 @@ public class ModificarVidas : MonoBehaviour
 
     private void Start()
     {
-        vidas = 3;
+        //Aquí no se inicializan la variable 'vidas' ya que el script 'EmpezarPartida.cs' lo hace.
+
         this.actualizarTextoVidas();
     }
 

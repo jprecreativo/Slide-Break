@@ -6,7 +6,6 @@ public class MovimientoPelota : MonoBehaviour
     private bool juegoIniciado;
     private Vector3 posInicial;
     private Transform barra;
-    public float velocidadInicial;
 
     private void Awake()
     {
@@ -17,7 +16,6 @@ public class MovimientoPelota : MonoBehaviour
     private void Start ()
     {
         juegoIniciado = false;
-        velocidadInicial = 500f;
         posInicial = this.transform.position;
 	}
 	
@@ -30,9 +28,12 @@ public class MovimientoPelota : MonoBehaviour
             this.transform.SetParent(null);   // Ya no somos hijo de la barra, nos movemos independientemente.
             rigidBody.isKinematic = false;
 
-            float valorX = Input.GetAxisRaw("Horizontal"), desfase = 10;
+            float velocidadInicial = VariablesGlobales.VELOCIDAD_PELOTA;
+            float desfase = VariablesGlobales.DESFASE;
+            float valorX = (Input.GetAxisRaw("Horizontal") * velocidadInicial + desfase) / 2;
+            Vector3 vectorFuerzas = new Vector3(valorX, velocidadInicial, 0);
 
-            rigidBody.AddForce(new Vector3(valorX * velocidadInicial + desfase, velocidadInicial, 0));
+            rigidBody.AddForce(vectorFuerzas);
         }
 	}
 
